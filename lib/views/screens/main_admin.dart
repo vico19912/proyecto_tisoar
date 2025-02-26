@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_tisoar/views/screens/widget/main_admin/body.dart';
-import 'package:proyecto_tisoar/views/screens/widget/main_admin/bottom_bar.dart';
+import 'package:proyecto_tisoar/views/screens/widget/general/bottom_bar.dart';
 
 class MainAdminScreen extends StatelessWidget {
   const MainAdminScreen
