@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_tisoar/views/screens/main_admin.dart';
+
+import 'views/login.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -15,10 +17,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xffd9d9d9)),
         useMaterial3: true,
       ),
-      home: const MainAdminScreen(),
+      home: LoginScreen(),
       
     );
   }

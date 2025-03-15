@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_tisoar/views/screens/widget/general/bottom_bar.dart';
-import 'package:proyecto_tisoar/views/screens/widget/pending_orders/row_order.dart';
+
+import 'widget/general/bottom_bar.dart';
+import 'widget/pending_orders/row_order.dart';
+
 
 class PendingOrdersScreen extends StatelessWidget {
   const PendingOrdersScreen({super.key});
@@ -15,7 +17,7 @@ class PendingOrdersScreen extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(16.0),
               decoration: BoxDecoration(
-                color: Colors.amber,
+                color: const Color(0xffd9d9d9),
                 borderRadius: BorderRadius.circular(30),
               ),
             ),
@@ -49,7 +51,7 @@ class PendingOrdersScreen extends StatelessWidget {
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                     ),
-                    Text('Despachar', style:
+                    Text('Entregar', style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)
                     )
                   ],

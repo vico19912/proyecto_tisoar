@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_tisoar/views/screens/widget/main_admin/menu_option.dart';
+
+import 'menu_option.dart';
 
 Widget mainAdminBody(BuildContext context) {
   return Stack(
@@ -11,13 +12,13 @@ Widget mainAdminBody(BuildContext context) {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.vertical(
                   top: Radius.circular(390), bottom: Radius.circular(390)),
-              color: Colors.amber),
+              color:  Color(0xffd9d9d9)),
         ),
       ),
       ListView(
         padding: EdgeInsets.all(40),
         children: [
-          SizedBox(height: 150),
+          SizedBox(height: 100),
           MenuOptionCard( buttonTitle: 'Ver los pedidos pendientes', pageToNavigate: 1),
           SizedBox(height: 100),
           MenuOptionCard( buttonTitle: 'Editar el Menú', pageToNavigate: 2),

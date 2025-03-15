@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_tisoar/views/screens/edit_drink.dart';
-import 'package:proyecto_tisoar/views/screens/edit_menu.dart';
-import 'package:proyecto_tisoar/views/screens/pending_orders.dart';
+
+import '../../edit_drink.dart';
+import '../../edit_menu.dart';
+import '../../pending_orders.dart';
+
 
 class MenuOptionCard extends StatelessWidget {
   final String buttonTitle;
