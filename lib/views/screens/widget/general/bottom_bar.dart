@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 Widget bottomBarAdmin() {
   return BottomAppBar(
       shape: CircularNotchedRectangle(), 
-      color: Colors.amber, // Color de fondo de la barra
+      color: Color(0xffd9d9d9), // Color de fondo de la barra
       notchMargin: 6.0,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -14,7 +14,7 @@ Widget bottomBarAdmin() {
           ),
           IconButton(
             icon: Icon(Icons.home),
-            onPressed: () => {print('Hola')},
+            onPressed: () => {},
           ), // Espacio para el botón flotante
           IconButton(
             icon: Icon(Icons.fact_check_sharp),

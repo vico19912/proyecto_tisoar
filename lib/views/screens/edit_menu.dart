@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'widget/edit_menu/edit_menu_body.dart';
 import 'widget/general/bottom_bar.dart';
-import 'widget/main_admin/body.dart';
 
 
-class MainAdminScreen extends StatelessWidget {
-  const MainAdminScreen
-({super.key});
+class EditMenuScreen extends StatelessWidget {
+  const EditMenuScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: mainAdminBody(context),
+      body: BodyMenuEdit(),
       bottomNavigationBar: bottomBarAdmin(),
     );
   }

@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'widget/edit_drink/edit_drik_body.dart';
 import 'widget/general/bottom_bar.dart';
-import 'widget/main_admin/body.dart';
 
 
-class MainAdminScreen extends StatelessWidget {
-  const MainAdminScreen
-({super.key});
+class EditDrinkScreen extends StatelessWidget {
+  const EditDrinkScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: mainAdminBody(context),
+      body: bodyEditDrink(context),
       bottomNavigationBar: bottomBarAdmin(),
     );
   }
