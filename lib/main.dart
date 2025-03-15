@@ -1,27 +1,23 @@
 import 'package:flutter/material.dart';
-
-import 'views/login.dart';
-
+import 'package:proyecto/view/home_screen.dart';
+import 'package:proyecto/view/login_screen.dart';
+import 'package:proyecto/view/menu_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xffd9d9d9)),
-        useMaterial3: true,
-      ),
-      home: LoginScreen(),
-      
+      initialRoute: '/login', // Inicia en la pantalla de login
+      routes: {
+        '/login': (context) => LoginScreen(),
+        '/home': (context) => HomeScreen(),
+        '/menu': (context) => MenuScreen(), // Agrega más rutas si las necesitas
+      },
     );
   }
 }
